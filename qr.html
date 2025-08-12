@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Login QR Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <form>
+        <h2>Wi-Fi Login</h2>
+        <div class="internal">
+            <img id="qr-code" width="164" src="https://api.qrserver.com/v1/create-qr-code/?size=164x164&data=todo" alt="QR Code">
+            <div class="inputs">
+                <label>
+                    Rede Wi-fi
+                    <input class="ssid" type="text" placeholder="Rede Wi-Fi">
+                </label>
+                <label>
+                    Senha da Rede
+                    <input class="password" type="password" placeholder="Senha da Rede">
+                </label>
+            </div>
+        </div>
+        <p>Aponte seu celular parar o QrCode, para acessar o WiFi.</p>
+        <button type="button" onclick="generateQR()">Criar QR-code para Wi-Fi</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
